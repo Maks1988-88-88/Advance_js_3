@@ -31,6 +31,9 @@ console.log(newLogin);
 // logins.push(newLogin);
 
 const addLogin = function(logins, login) {
+  if (newLogin === null) {
+    return;
+  }
   let varForCheckLoginValidity = checkLoginValidity(login);
 
   if (varForCheckLoginValidity) {
